@@ -3,13 +3,14 @@
     --card-bg: #161616;
     --text-primary: #ffffff;
     --text-secondary: #a0a0a0;
-    --accent: #FFD700; /* Gold/Yellow for 'Sun' vibe & Electronics */
+    --accent: #FFD700;
+    /* Gold/Yellow for 'Sun' vibe & Electronics */
     --accent-hover: #e6c200;
     --border-color: #333;
-    
+
     --font-heading: 'Space Grotesk', sans-serif;
     --font-body: 'Outfit', sans-serif;
-    
+
     --transition: all 0.3s ease;
 }
 
@@ -301,7 +302,7 @@ ul {
 .project-card:hover {
     transform: translateY(-5px);
     border-color: var(--accent);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .project-header {
@@ -395,8 +396,25 @@ ul {
 }
 
 .social-btn:hover {
-    border-color: var(--accent);
-    color: var(--accent);
+    transform: translateY(-3px);
+}
+
+.social-btn.whatsapp:hover {
+    border-color: #25D366;
+    color: #25D366;
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.2);
+}
+
+.social-btn.facebook:hover {
+    border-color: #1877F2;
+    color: #1877F2;
+    box-shadow: 0 5px 15px rgba(24, 119, 242, 0.2);
+}
+
+.social-btn.instagram:hover {
+    border-color: #E4405F;
+    color: #E4405F;
+    box-shadow: 0 5px 15px rgba(228, 64, 95, 0.2);
 }
 
 .social-btn i {
@@ -410,7 +428,7 @@ ul {
     color: var(--text-secondary);
     font-size: 0.9rem;
     margin-top: 4rem;
-    border-top: 1px solid rgba(255,255,255,0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .footer a {
@@ -426,11 +444,11 @@ ul {
     .title {
         font-size: 3rem;
     }
-    
+
     .header {
         padding: 1rem 0;
     }
-    
+
     .nav {
         position: fixed;
         top: 0;
@@ -442,25 +460,25 @@ ul {
         align-items: center;
         justify-content: center;
         transition: 0.3s ease-in-out;
-        box-shadow: -5px 0 15px rgba(0,0,0,0.5);
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
     }
-    
+
     .nav.active {
         right: 0;
     }
-    
+
     .nav-list {
         flex-direction: column;
         align-items: center;
         gap: 2rem;
     }
-    
+
     .hamburger {
         display: block;
         cursor: pointer;
         z-index: 101;
     }
-    
+
     .bar {
         width: 25px;
         height: 3px;
@@ -473,11 +491,11 @@ ul {
     .active .bar:nth-child(1) {
         transform: rotate(-45deg) translate(-5px, 6px);
     }
-    
+
     .active .bar:nth-child(2) {
         opacity: 0;
     }
-    
+
     .active .bar:nth-child(3) {
         transform: rotate(45deg) translate(-5px, -6px);
     }
