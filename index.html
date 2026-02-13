@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Electrosun - Servicios de reparación de computadores, electrónica, impresión 3D y modelado 3D. Desarrollador de software.">
+    <meta name="author" content="Paul Venci">
+    <title>Electrosun | Servicios Tecnológicos & Desarrollo</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">ELECTROSUN<span class="dot">.</span></a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="container hero-content">
+                <span class="subtitle">Innovación & Tecnología</span>
+                <h1 class="title">Soluciones Digitales <br>y Hardware Avanzado</h1>
+                <p class="description">
+                    Especialista en reparación de electrónica, computación y desarrollo de software.
+                    Certificación SEC Clase B para tu seguridad y confianza.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn btn-primary">Contáctame</a>
+                    <a href="#proyectos" class="btn btn-outline">Ver Proyectos</a>
+                </div>
+                
+                <div class="tech-stack">
+                    <div class="tech-item"><i class="fa-solid fa-microchip"></i> Electrónica</div>
+                    <div class="tech-item"><i class="fa-solid fa-code"></i> Desarrollo</div>
+                    <div class="tech-item"><i class="fa-solid fa-cube"></i> 3D Print</div>
+                </div>
+            </div>
+            <div class="hero-background"></div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="servicios" class="section services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Lo que hago</span>
+                    <h2 class="section-title">Mis Servicios</h2>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <h3>Servicio Técnico</h3>
+                        <p>Reparación profesional de computadores y equipos electrónicos. Diagnóstico preciso y solución de fallas de hardware y software.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-cubes-stacked"></i>
+                        </div>
+                        <h3>Impresión 3D</h3>
+                        <p>Servicio de impresión 3D de alta calidad para prototipos, repuestos y figuras personalizadas. Materiales diversos según tu necesidad.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-pen-ruler"></i>
+                        </div>
+                        <h3>Modelado 3D</h3>
+                        <p>Diseño y modelado de piezas y objetos tridimensionales. Transformo tus ideas o planos en modelos listos para imprimir o visualizar.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <h3>Certificación SEC</h3>
+                        <p>Instalador eléctrico autorizado con Licencia SEC Clase B. Instalaciones seguras y bajo normativa vigente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="proyectos" class="section projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Portafolio</span>
+                    <h2 class="section-title">Proyectos GitHub</h2>
+                    <a href="https://github.com/paulvenci" target="_blank" class="github-profile-link">
+                        <i class="fa-brands fa-github"></i> @paulvenci
+                    </a>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: GestorBar -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <div class="folder-icon"><i class="fa-regular fa-folder-open"></i></div>
+                                <div class="project-links">
+                                    <a href="https://github.com/paulvenci/GestorBar" target="_blank" aria-label="GitHub Repo"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                            <h3 class="project-title">GestorBar</h3>
+                            <p class="project-desc">Sistema de gestión integral para bares y restaurantes. Control de inventario, ventas y administración de mesas.</p>
+                            <ul class="project-tech-list">
+                                <li>Vue.js</li>
+                                <li>Node.js</li>
+                                <li>Database</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: GestorEstilista -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <div class="folder-icon"><i class="fa-regular fa-folder-open"></i></div>
+                                <div class="project-links">
+                                    <a href="https://github.com/paulvenci/GestorEstilista" target="_blank" aria-label="GitHub Repo"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                            <h3 class="project-title">GestorEstilista</h3>
+                            <p class="project-desc">Plataforma para la administración de salones de belleza y estilistas. Agenda de citas, gestión de clientes y servicios.</p>
+                            <ul class="project-tech-list">
+                                <li>Web App</li>
+                                <li>Management</li>
+                                <li>UI/UX</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="section contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h2>Conectemos</h2>
+                        <p>¿Tienes un proyecto en mente o necesitas soporte técnico? Estoy disponible para ayudarte.</p>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/profile.php?id=100063859728788" target="_blank" class="social-btn facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="https://www.instagram.com/electrosun.services/?hl=es" target="_blank" class="social-btn instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2024 Electrosun. Todos los derechos reservados.</p>
+            <p>Desarrollado por <a href="https://github.com/paulvenci" target="_blank">Paul Venci</a></p>
+        </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
